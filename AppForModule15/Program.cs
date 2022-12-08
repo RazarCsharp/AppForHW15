@@ -17,8 +17,8 @@
 
         static string[] GetAllStudents(Classroom[] classes)
         {
-            var result = from students in classes
-                         from student in students.Students
+            var result = from stud in classes
+                         from student in stud.Students
                          select student;
             return result.ToArray();
         }
